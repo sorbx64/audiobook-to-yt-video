@@ -31,15 +31,14 @@ python m4b_to_mp4_converter.py <audio> <image> <output_folder> --fps <fps_count>
 
 1. Run `ffprobe audiobook.m4b 2> output.txt`
 
-## NOTE 
-- `2>` is being used here because `ffprobe file.m4b` outputs to stderr.
+NOTE: `2>` is being used here because `ffprobe file.m4b` outputs to stderr.
 
 1. Clone this repo. Open it in terminal.
 1. cd into `/src` directory.
 1. Run - 
 
 ```shell
-python yt_timestamp_gen.py file path/to/output.txt
+python yt_timestamp_gen.py -file path/to/output.txt
 ```
 This command will generate new text file that contains all timestamps required by youtube to display as chapters. Simply copy contents in text file and paste in youtube description of the video. The text file name will have prefix "yt_desc_" before <input_file>. Example in this case: yt_desc_output.txt
 
