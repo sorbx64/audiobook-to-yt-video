@@ -7,7 +7,7 @@
 1. Follow the setup / configuration procedure mentioned in epubtts-edge `README.md`.
 1. After all above setup done, goto epub2tts-edge directory and run command `epub2tts-edge <file.epub>` in terminal. It will generate a text file with same name as epub file. 
 1. Open this text file and check for missing text and headings. As, it has been found to be inaccurate in converting epub file to text file exactly line by line. Lookout for lines begining with `#` symbol. It shows that text in front of it will be read with pause as a separate chapter. Also, this text will appear as chapter's title in metadata of audiobook (.m4b file), when we will generate it. 
-1. Now, to generate audiobook from text file. Run `epub2tts-edge <file.txt>` command in terminal. Audiobook (.m4b) generation process will start. To change speaker voice and language, checkout epub2tts-edge `README.md` file. 
+1. Now, to generate audiobook from text file. Run `epub2tts-edge <file.txt>` command in terminal. Audiobook (.m4b) generation process will start. To change speaker voice and language, checkout epub2tts-edge `README.md` file. NOTE: To read hindi language text, use `--speaker bn-IN-BhashkarNeural` or `--speaker bn-IN-TanishaaNeural` flag while running this command. To see list of supported voices you can use with `--speaker` flag,  checkout `SUPPORTED_VOICES` variable in this [python file](https://github.com/hasscc/hass-edge-tts/blob/main/custom_components/edge_tts/tts.py)
 1. After audiobook has been generated, run command `ffprobe <audiobook.m4b>` to see metadata (including chapters) of audiobook.
 
 # To generate video (.mp4) file from audiobook (.m4b) 
