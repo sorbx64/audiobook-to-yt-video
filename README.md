@@ -13,12 +13,12 @@
 # Setting up the environment to use scripts of this repo
 
 1. clone this repo. Open it in terminal or cmd.
-1. setup python virtual environment using following commands -
+2. setup python virtual environment using following commands -
 ```shell
 python -m venv venv
 ```
 
-1. activate the virtual environment
+3. activate the virtual environment
 
 **for windows**
 ```bat
@@ -30,7 +30,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-1. install dependencies.
+4. install dependencies.
 ```shell
 pip install .
 ```
@@ -49,7 +49,6 @@ python epub_to_text.py "path/to/input_epub_file.epub" "path/to/output_text_file.
 
 If you want to make a video with animations/motiongraphics from this audiobook you should use a video editor like *openshot*. Otherwise, if you just want to convert this audiobook into video format to be uploaded on youtube follow the instructions below. -
 
-1. follow **setting up the environment** instructions above.
 1. cd into `/src` directory.
 1. Run - 
 
